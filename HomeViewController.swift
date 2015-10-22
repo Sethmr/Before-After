@@ -30,8 +30,6 @@ class HomeViewController: UIViewController {
     func makeLayerRounded(layer: CALayer) {
         layer.cornerRadius = 5
         layer.masksToBounds = true
-        layer.borderWidth = 1
-        layer.borderColor = UIColor.blackColor().CGColor
     }
     
     func makeLayerCircular(layer: CALayer) {
