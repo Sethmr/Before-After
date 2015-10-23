@@ -14,6 +14,13 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var likeNumberLabel: UILabel!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var cellView: UIView!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var profilePic: UIImageView!
+    @IBOutlet weak var moreButton: UIButton!
+    
+    
+    
     var likeCount : Int = 0
 
     func likeButtonPress() {
@@ -23,9 +30,7 @@ class HomeTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        likeNumberLabel.layer.cornerRadius = 30 /*likeButton.layer.frame.height / 2*/
-        likeNumberLabel.layer.borderWidth = 2
-        likeNumberLabel.layer.borderColor = UIColor.blackColor().CGColor
+        commentButton.layer.cornerRadius = 18
         likeNumberLabel.text = "\(likeCount) Likes"
     }
 

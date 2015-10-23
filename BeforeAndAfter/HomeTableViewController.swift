@@ -16,15 +16,30 @@ class HomeTableViewController: UITableViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        3// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
 
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl!.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView.addSubview(refreshControl!)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
+    func refresh(sender: AnyObject){
+        self.reloadInputViews()
+        self.tableView.reloadData()
+        self.refreshControl!.endRefreshing()
+    }
+    
     @IBAction func likeButtonPressed(sender: AnyObject) {
         let index = NSIndexPath(forRow: sender.tag, inSection: 0)
         let cell = tableView.cellForRowAtIndexPath(index) as! HomeTableViewCell
         cell.likeButtonPress()
-        cell.likeNumberLabel.text = "Hello World"
+        //cell.likeNumberLabel.text = "Hello World"
         
     }
     override func didReceiveMemoryWarning() {
@@ -50,6 +65,7 @@ class HomeTableViewController: UITableViewController {
         cell.likeButton.tag = indexPath.row
         cell.likeNumberLabel.tag = indexPath.row
         cell.beforeImage.image = UIImage(named: "fat")
+        cell.profilePic.image = UIImage(named: "stickProfile")
         // Configure the cell...
 
         return cell

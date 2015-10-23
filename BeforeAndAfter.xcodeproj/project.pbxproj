@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5D9E801E1BD97C2A00397E91 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E801D1BD97C2A00397E91 /* HomeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		5D9E80201BD97C4F00397E91 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E801F1BD97C4F00397E91 /* HomeTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		5D9E80221BD9DACA00397E91 /* TGCameraViewController in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E80211BD9DACA00397E91 /* TGCameraViewController */; settings = {ASSET_TAGS = (); }; };
+		5D9E80271BD9DC1E00397E91 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E80261BD9DC1E00397E91 /* CameraViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		5DF3770D1BBC7AA200CDA451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF3770C1BBC7AA200CDA451 /* AppDelegate.swift */; };
 		5DF377141BBC7AA200CDA451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF377121BBC7AA200CDA451 /* Main.storyboard */; };
 		5DF377161BBC7AA200CDA451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF377151BBC7AA200CDA451 /* Assets.xcassets */; };
@@ -38,6 +40,9 @@
 /* Begin PBXFileReference section */
 		5D9E801D1BD97C2A00397E91 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		5D9E801F1BD97C4F00397E91 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		5D9E80211BD9DACA00397E91 /* TGCameraViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TGCameraViewController; path = BeforeAndAfter/TGCameraViewController; sourceTree = "<group>"; };
+		5D9E80251BD9DB4A00397E91 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = BeforeAndAfter/BridgingHeader.h; sourceTree = "<group>"; };
+		5D9E80261BD9DC1E00397E91 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ../CameraViewController.swift; sourceTree = "<group>"; };
 		5DF377091BBC7AA200CDA451 /* BeforeAndAfter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeforeAndAfter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF3770C1BBC7AA200CDA451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DF377131BBC7AA200CDA451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +90,8 @@
 				5DF377221BBC7AA200CDA451 /* BeforeAndAfterTests */,
 				5DF3772D1BBC7AA200CDA451 /* BeforeAndAfterUITests */,
 				5DF3770A1BBC7AA200CDA451 /* Products */,
+				5D9E80251BD9DB4A00397E91 /* BridgingHeader.h */,
+				5D9E80211BD9DACA00397E91 /* TGCameraViewController */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +108,7 @@
 		5DF3770B1BBC7AA200CDA451 /* BeforeAndAfter */ = {
 			isa = PBXGroup;
 			children = (
+				5D9E80261BD9DC1E00397E91 /* CameraViewController.swift */,
 				5DF5F83B1BBE3DD2000D5F10 /* HomeViewController.swift */,
 				5DF3770C1BBC7AA200CDA451 /* AppDelegate.swift */,
 				5DF377121BBC7AA200CDA451 /* Main.storyboard */,
@@ -235,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF377191BBC7AA200CDA451 /* LaunchScreen.storyboard in Resources */,
+				5D9E80221BD9DACA00397E91 /* TGCameraViewController in Resources */,
 				5DF377161BBC7AA200CDA451 /* Assets.xcassets in Resources */,
 				5DF377141BBC7AA200CDA451 /* Main.storyboard in Resources */,
 			);
@@ -262,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D9E801E1BD97C2A00397E91 /* HomeTableViewController.swift in Sources */,
+				5D9E80271BD9DC1E00397E91 /* CameraViewController.swift in Sources */,
 				5DF3770D1BBC7AA200CDA451 /* AppDelegate.swift in Sources */,
 				5D9E80201BD97C4F00397E91 /* HomeTableViewCell.swift in Sources */,
 				5DF5F83C1BBE3DD2000D5F10 /* HomeViewController.swift in Sources */,
