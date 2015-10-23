@@ -19,6 +19,7 @@ class HomeTableViewController: UITableViewController {
         3// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
 
+        self.reloadInputViews()
         self.refreshControl = UIRefreshControl()
         self.refreshControl!.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(refreshControl!)
@@ -35,6 +36,9 @@ class HomeTableViewController: UITableViewController {
         self.refreshControl!.endRefreshing()
     }
     
+    @IBAction func imageButtonWasPressed(sender: AnyObject) {
+        performSegueWithIdentifier("toImageDetails", sender: sender)
+    }
     @IBAction func likeButtonPressed(sender: AnyObject) {
         let index = NSIndexPath(forRow: sender.tag, inSection: 0)
         let cell = tableView.cellForRowAtIndexPath(index) as! HomeTableViewCell
@@ -64,7 +68,9 @@ class HomeTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("homeCell", forIndexPath: indexPath) as! HomeTableViewCell
         cell.likeButton.tag = indexPath.row
         cell.likeNumberLabel.tag = indexPath.row
-        cell.beforeImage.image = UIImage(named: "fat")
+        cell.beforeImageButton.setImage(UIImage(named: "fat"), forState: UIControlState.Normal)
+        cell.beforeImageButton.contentVerticalAlignment = UIControlContentVerticalAlignment.Fill
+        cell.beforeImageButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Fill
         cell.profilePic.image = UIImage(named: "stickProfile")
         // Configure the cell...
 
@@ -111,14 +117,17 @@ class HomeTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if let idvc = segue.destinationViewController as! ImageDetailsViewController{
+//            
+//        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
+  //  }
+
 
 }

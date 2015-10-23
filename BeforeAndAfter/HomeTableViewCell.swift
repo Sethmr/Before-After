@@ -10,10 +10,9 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var beforeImage: UIImageView!
+    @IBOutlet weak var beforeImageButton: UIButton!
     @IBOutlet weak var likeNumberLabel: UILabel!
     @IBOutlet weak var likeButton: UIButton!
-    @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var commentButton: UIButton!
     @IBOutlet weak var profilePic: UIImageView!
