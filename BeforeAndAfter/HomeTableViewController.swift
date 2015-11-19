@@ -16,7 +16,7 @@ class HomeTableViewController: UITableViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        3// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
 
         self.reloadInputViews()
@@ -39,11 +39,11 @@ class HomeTableViewController: UITableViewController {
     @IBAction func imageButtonWasPressed(sender: AnyObject) {
         performSegueWithIdentifier("toImageDetails", sender: sender)
     }
+    
     @IBAction func likeButtonPressed(sender: AnyObject) {
         let index = NSIndexPath(forRow: sender.tag, inSection: 0)
         let cell = tableView.cellForRowAtIndexPath(index) as! HomeTableViewCell
         cell.likeButtonPress()
-        //cell.likeNumberLabel.text = "Hello World"
         
     }
     override func didReceiveMemoryWarning() {
