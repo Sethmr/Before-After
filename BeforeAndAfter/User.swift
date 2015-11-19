@@ -27,9 +27,26 @@ class User {
     var userFirstName = String()
     var userLastName = String()
     var posts = [Post]()
-    var level = 0
+    var comments = [Comment]()
     var profilePicture = UIImage()
 
+    init(name: String, firstName: String, lastName: String, picture: UIImage) {
+        username = name
+        userFirstName = firstName
+        userLastName = lastName
+        profilePicture = picture
+    }
+    
+    init(name: String, firstName: String, lastName: String, cmts: [Comment], psts: [Post], picture: UIImage) {
+        username = name
+        userFirstName = firstName
+        userLastName = lastName
+        posts = psts
+        comments = cmts
+        profilePicture = picture
+    }
+    
     init() {
+        
     }
 }

@@ -22,6 +22,14 @@ class Post {
         
     }
     
+    init(before: UIImage, after: UIImage, likes: Int, descrip: String, subDate: NSDate) {
+        imageBefore = before
+        imageAfter = after
+        likeCount = likes
+        description = descrip
+        submissionDate = subDate
+    }
+    
     init(before: UIImage, after: UIImage, likes: Int, descrip: String, subDate: NSDate, thisUser: User, cmts: [Comment]) {
         imageBefore = before
         imageAfter = after
