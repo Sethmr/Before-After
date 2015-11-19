@@ -16,17 +16,19 @@ class Post {
     var description = String()
     var submissionDate = NSDate()
     var user = User()
+    var comments = [Comment]()
     
     init() {
         
     }
     
-    init(before: UIImage, after: UIImage, likes: Int, descrip: String, subDate: NSDate, thisUser: User) {
+    init(before: UIImage, after: UIImage, likes: Int, descrip: String, subDate: NSDate, thisUser: User, cmts: [Comment]) {
         imageBefore = before
         imageAfter = after
         likeCount = likes
         description = descrip
         submissionDate = subDate
         user = thisUser
+        comments = cmts
     }
 }
