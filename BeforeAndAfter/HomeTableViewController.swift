@@ -14,6 +14,9 @@ class HomeTableViewController: UITableViewController {
         super.viewDidLoad()
         DummyData.sharedInstance.posts = DummyData.sharedInstance.posts.sort { $0.submissionDate.timeIntervalSinceDate($1.submissionDate) >= 0 }
 
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 440
+        
         self.reloadInputViews()
         self.refreshControl = UIRefreshControl()
         self.refreshControl!.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)

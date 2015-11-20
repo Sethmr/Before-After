@@ -396,6 +396,9 @@
                                         <constraint firstAttribute="trailing" secondItem="k7Y-zz-tzn" secondAttribute="trailing" constant="8" id="X9H-6g-tH7">
                                             <variation key="widthClass=compact" constant="0.0"/>
                                         </constraint>
+                                        <constraint firstAttribute="bottomMargin" secondItem="zj7-Kb-b9q" secondAttribute="bottom" constant="310" id="cDv-tK-9ea">
+                                            <variation key="widthClass=compact" constant="0.0"/>
+                                        </constraint>
                                         <constraint firstItem="zj7-Kb-b9q" firstAttribute="leading" secondItem="H3d-6a-9sk" secondAttribute="trailing" constant="-2" id="kDh-5a-uw9">
                                             <variation key="widthClass=compact" constant="8"/>
                                         </constraint>
@@ -418,20 +421,21 @@
                                             <exclude reference="Lbf-p2-kWQ"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <exclude reference="7iY-33-Ov2"/>
+                                            <exclude reference="X9H-6g-tH7"/>
+                                            <exclude reference="mg8-Ec-xmH"/>
                                             <exclude reference="Qld-Bo-5iV"/>
                                             <exclude reference="skK-kZ-895"/>
                                             <exclude reference="0He-53-N7M"/>
                                             <exclude reference="VN8-0q-yCu"/>
-                                            <exclude reference="ruB-IH-xw7"/>
-                                            <exclude reference="wtU-5m-kx6"/>
+                                            <exclude reference="P8R-Fc-b39"/>
+                                            <exclude reference="cDv-tK-9ea"/>
+                                            <exclude reference="kDh-5a-uw9"/>
                                             <exclude reference="Bmb-Fk-WZe"/>
                                             <exclude reference="DBT-a0-pmW"/>
                                             <exclude reference="JpD-jN-eNv"/>
-                                            <exclude reference="7iY-33-Ov2"/>
-                                            <exclude reference="X9H-6g-tH7"/>
-                                            <exclude reference="mg8-Ec-xmH"/>
-                                            <exclude reference="P8R-Fc-b39"/>
-                                            <exclude reference="kDh-5a-uw9"/>
+                                            <exclude reference="ruB-IH-xw7"/>
+                                            <exclude reference="wtU-5m-kx6"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -444,20 +448,21 @@
                                             <include reference="Lbf-p2-kWQ"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <include reference="7iY-33-Ov2"/>
+                                            <include reference="X9H-6g-tH7"/>
+                                            <include reference="mg8-Ec-xmH"/>
                                             <include reference="Qld-Bo-5iV"/>
                                             <include reference="skK-kZ-895"/>
                                             <include reference="0He-53-N7M"/>
                                             <include reference="VN8-0q-yCu"/>
-                                            <include reference="ruB-IH-xw7"/>
-                                            <include reference="wtU-5m-kx6"/>
+                                            <include reference="P8R-Fc-b39"/>
+                                            <include reference="cDv-tK-9ea"/>
+                                            <include reference="kDh-5a-uw9"/>
                                             <exclude reference="Bmb-Fk-WZe"/>
                                             <include reference="DBT-a0-pmW"/>
                                             <include reference="JpD-jN-eNv"/>
-                                            <include reference="7iY-33-Ov2"/>
-                                            <include reference="X9H-6g-tH7"/>
-                                            <include reference="mg8-Ec-xmH"/>
-                                            <include reference="P8R-Fc-b39"/>
-                                            <include reference="kDh-5a-uw9"/>
+                                            <include reference="ruB-IH-xw7"/>
+                                            <include reference="wtU-5m-kx6"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
