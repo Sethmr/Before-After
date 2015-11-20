@@ -11,6 +11,8 @@
 		5D1CCD431BFE3F530025F6C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CCD421BFE3F530025F6C8 /* User.swift */; };
 		5D1CCD451BFE3F670025F6C8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CCD441BFE3F670025F6C8 /* Comment.swift */; };
 		5D1CCD4D1BFE43160025F6C8 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CCD4C1BFE43160025F6C8 /* DummyData.swift */; };
+		5D1CCD4F1BFE9E340025F6C8 /* HomeHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CCD4E1BFE9E340025F6C8 /* HomeHeaderTableViewCell.swift */; };
+		5D1CCD511BFEABF50025F6C8 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CCD501BFEABF50025F6C8 /* NSDate+Extension.swift */; };
 		5D9E801E1BD97C2A00397E91 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E801D1BD97C2A00397E91 /* HomeTableViewController.swift */; };
 		5D9E80201BD97C4F00397E91 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E801F1BD97C4F00397E91 /* HomeTableViewCell.swift */; };
 		5D9E80221BD9DACA00397E91 /* TGCameraViewController in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E80211BD9DACA00397E91 /* TGCameraViewController */; };
@@ -50,6 +52,8 @@
 		5D1CCD421BFE3F530025F6C8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5D1CCD441BFE3F670025F6C8 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		5D1CCD4C1BFE43160025F6C8 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		5D1CCD4E1BFE9E340025F6C8 /* HomeHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		5D1CCD501BFEABF50025F6C8 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		5D9E801D1BD97C2A00397E91 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		5D9E801F1BD97C4F00397E91 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		5D9E80211BD9DACA00397E91 /* TGCameraViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TGCameraViewController; path = BeforeAndAfter/TGCameraViewController; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				5D9E801D1BD97C2A00397E91 /* HomeTableViewController.swift */,
+				5D1CCD4E1BFE9E340025F6C8 /* HomeHeaderTableViewCell.swift */,
 				5D9E801F1BD97C4F00397E91 /* HomeTableViewCell.swift */,
 			);
 			name = Home;
@@ -150,6 +155,14 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
+		5D1CCD521BFEABFB0025F6C8 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				5D1CCD501BFEABF50025F6C8 /* NSDate+Extension.swift */,
+			);
+			name = NSDate;
+			sourceTree = "<group>";
+		};
 		5DF377001BBC7AA100CDA451 = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +193,7 @@
 				5D1CCD471BFE41DD0025F6C8 /* Home */,
 				5D1CCD4A1BFE42350025F6C8 /* Posts&More */,
 				5D1CCD481BFE41FD0025F6C8 /* Profile */,
+				5D1CCD521BFEABFB0025F6C8 /* NSDate */,
 				5D1CCD4B1BFE427E0025F6C8 /* Other */,
 			);
 			path = BeforeAndAfter;
@@ -339,9 +353,11 @@
 				5D9E80271BD9DC1E00397E91 /* CameraViewController.swift in Sources */,
 				5D9E80311BD9EE2000397E91 /* MapViewController.swift in Sources */,
 				5DF3770D1BBC7AA200CDA451 /* AppDelegate.swift in Sources */,
+				5D1CCD4F1BFE9E340025F6C8 /* HomeHeaderTableViewCell.swift in Sources */,
 				5D9E802D1BD9ECD300397E91 /* SettingsTableViewController.swift in Sources */,
 				5D9E802F1BD9ECE400397E91 /* EditProfileTableViewController.swift in Sources */,
 				5D1CCD451BFE3F670025F6C8 /* Comment.swift in Sources */,
+				5D1CCD511BFEABF50025F6C8 /* NSDate+Extension.swift in Sources */,
 				5D1CCD431BFE3F530025F6C8 /* User.swift in Sources */,
 				5D9E802B1BD9EC4900397E91 /* ProfileViewController.swift in Sources */,
 				5D9E80201BD97C4F00397E91 /* HomeTableViewCell.swift in Sources */,

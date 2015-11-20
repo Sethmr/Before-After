@@ -5,6 +5,12 @@
 //  Created by Seth Rininger on 9/30/15.
 //  Copyright © 2015 Seth Rininger. All rights reserved.
 //
+//https://color.adobe.com/Copy-of-My-Color-Theme-color-theme-7216242/edit/?copy=true
+//backgroundColor = UIColor(red: 24/255, green: 255/255, blue: 157/255, alpha: 1)
+//backgroundColor = UIColor(red: 24/255, green: 104/255, blue: 255/255, alpha: 1)
+//backgroundColor = UIColor(red: 37/255, green: 227/255, blue: 255/255, alpha: 1)
+//backgroundColor = UIColor(red: 22/255, green: 232/255, blue: 202/255, alpha: 1)
+//backgroundColor = UIColor(red: 22/255, green: 150/255, blue: 232/255, alpha: 1)
 
 import UIKit
 
