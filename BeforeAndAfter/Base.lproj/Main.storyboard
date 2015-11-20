@@ -372,6 +372,9 @@
                                                     <include reference="glW-7v-rb9"/>
                                                 </mask>
                                             </variation>
+                                            <connections>
+                                                <action selector="sliderValueChanged:" destination="MDz-nW-8FD" eventType="valueChanged" id="TTK-qc-Of5"/>
+                                            </connections>
                                         </slider>
                                     </subviews>
                                     <animations/>

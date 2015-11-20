@@ -17,6 +17,9 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var commentButton: UIButton!
     @IBOutlet weak var moreButton: UIButton!
     
+    var beforeImage = UIImage()
+    var afterImage = UIImage()
+    
     
     
     var likeCount : Int = 0
@@ -40,6 +43,16 @@ class HomeTableViewCell: UITableViewCell {
         likeNumberLabel.layer.borderColor = UIColor(red: 22/255, green: 232/255, blue: 202/255, alpha: 1).CGColor
     }
 
+    @IBAction func sliderValueChanged(sender: UISlider) {
+        let currentValue = sender.value
+        if currentValue <= 0.5{
+            beforeImageButton.setImage(beforeImage, forState: UIControlState.Normal)
+        }else{
+            beforeImageButton.setImage(afterImage, forState: UIControlState.Normal)
+        }
+       // likeNumberLabel.text = "\(currentValue)"
+    }
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

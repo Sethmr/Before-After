@@ -88,6 +88,8 @@ class HomeTableViewController: UITableViewController {
         cell.likeCount = DummyData.sharedInstance.posts[indexPath.section].likeCount
         cell.likeNumberLabel.text = "\(DummyData.sharedInstance.posts[indexPath.section].likeCount) Likes"
         cell.beforeImageButton.setImage(DummyData.sharedInstance.posts[indexPath.section].imageBefore, forState: UIControlState.Normal)
+        cell.beforeImage = DummyData.sharedInstance.posts[indexPath.section].imageBefore
+        cell.afterImage = DummyData.sharedInstance.posts[indexPath.section].imageAfter
         cell.beforeImageButton.contentVerticalAlignment = UIControlContentVerticalAlignment.Fill
         cell.beforeImageButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Fill
 
