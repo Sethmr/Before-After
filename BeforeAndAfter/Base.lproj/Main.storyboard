@@ -243,7 +243,7 @@
                                                 </mask>
                                             </variation>
                                             <connections>
-                                                <action selector="likeButtonPressed:" destination="TbJ-yW-MTx" eventType="touchUpInside" id="b9f-eA-sB8"/>
+                                                <action selector="likeButtonPressed:" destination="MDz-nW-8FD" eventType="touchUpInside" id="wgR-Ni-mMU"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Likes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zj7-Kb-b9q">
@@ -478,110 +478,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Home" id="Etk-wk-h5a"/>
-                    <connections>
-                        <segue destination="PWS-8F-i4c" kind="push" identifier="toImageDetails" id="Meu-P8-k62"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5z-d0-w4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4816.5" y="-315"/>
-        </scene>
-        <!--Image Details-->
-        <scene sceneID="vGk-8G-NTt">
-            <objects>
-                <viewController id="PWS-8F-i4c" customClass="ImageDetailsViewController" customModule="BeforeAndAfter" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ffq-WB-aiE"/>
-                        <viewControllerLayoutGuide type="bottom" id="qfa-0Q-eJ0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0wb-Ij-bsw">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fat" translatesAutoresizingMaskIntoConstraints="NO" id="rHv-Yi-0Cj">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="rHv-Yi-0Cj" secondAttribute="height" multiplier="1:1" id="JAV-xL-FZr"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="JAV-xL-FZr"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="JAV-xL-FZr"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TjL-aA-YWI">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="349" id="FhJ-gc-opD"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="FhJ-gc-opD"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="FhJ-gc-opD"/>
-                                    </mask>
-                                </variation>
-                            </scrollView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="TjL-aA-YWI" secondAttribute="trailing" id="1n3-4u-Ob4"/>
-                            <constraint firstItem="TjL-aA-YWI" firstAttribute="top" secondItem="rHv-Yi-0Cj" secondAttribute="bottom" constant="3" id="3cE-os-kbw">
-                                <variation key="widthClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstAttribute="trailing" secondItem="rHv-Yi-0Cj" secondAttribute="trailing" id="FCN-pM-h2K"/>
-                            <constraint firstItem="rHv-Yi-0Cj" firstAttribute="leading" secondItem="0wb-Ij-bsw" secondAttribute="leading" id="ZDU-ns-SXY"/>
-                            <constraint firstItem="TjL-aA-YWI" firstAttribute="leading" secondItem="0wb-Ij-bsw" secondAttribute="leading" id="q7q-qj-cUZ"/>
-                            <constraint firstItem="rHv-Yi-0Cj" firstAttribute="top" secondItem="Ffq-WB-aiE" secondAttribute="bottom" id="xOx-d6-YL4"/>
-                            <constraint firstItem="TjL-aA-YWI" firstAttribute="top" secondItem="rHv-Yi-0Cj" secondAttribute="bottom" id="xif-Xd-Rrq"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="rHv-Yi-0Cj"/>
-                                <exclude reference="TjL-aA-YWI"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="1n3-4u-Ob4"/>
-                                <exclude reference="3cE-os-kbw"/>
-                                <exclude reference="q7q-qj-cUZ"/>
-                                <exclude reference="xif-Xd-Rrq"/>
-                                <exclude reference="FCN-pM-h2K"/>
-                                <exclude reference="ZDU-ns-SXY"/>
-                                <exclude reference="xOx-d6-YL4"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="rHv-Yi-0Cj"/>
-                                <include reference="TjL-aA-YWI"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="1n3-4u-Ob4"/>
-                                <include reference="3cE-os-kbw"/>
-                                <include reference="q7q-qj-cUZ"/>
-                                <exclude reference="xif-Xd-Rrq"/>
-                                <include reference="FCN-pM-h2K"/>
-                                <include reference="ZDU-ns-SXY"/>
-                                <include reference="xOx-d6-YL4"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" title="Image Details" id="bpn-Xe-zW7"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aPP-fB-w4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5497.5" y="-315"/>
         </scene>
         <!--Camera-->
         <scene sceneID="GXg-YG-d6m">

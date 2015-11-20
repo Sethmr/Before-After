@@ -19,14 +19,7 @@ class HomeTableViewCell: UITableViewCell {
     
     var beforeImage = UIImage()
     var afterImage = UIImage()
-    
-    
-    
     var likeCount : Int = 0
-
-    func likeButtonPress() {
-        likeNumberLabel.text = "\(++likeCount) Likes"
-    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,6 +36,11 @@ class HomeTableViewCell: UITableViewCell {
         likeNumberLabel.layer.borderColor = UIColor(red: 22/255, green: 232/255, blue: 202/255, alpha: 1).CGColor
     }
 
+    @IBAction func likeButtonPressed(sender: AnyObject) {
+        likeCount++
+        likeNumberLabel.text = "\(likeCount) Likes"
+    }
+    
     @IBAction func sliderValueChanged(sender: UISlider) {
         let currentValue = sender.value
         if currentValue <= 0.5{
@@ -50,7 +48,6 @@ class HomeTableViewCell: UITableViewCell {
         }else{
             beforeImageButton.setImage(afterImage, forState: UIControlState.Normal)
         }
-       // likeNumberLabel.text = "\(currentValue)"
     }
     
     override func setSelected(selected: Bool, animated: Bool) {
