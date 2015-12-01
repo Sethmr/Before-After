@@ -17,17 +17,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     var beforeImage: UIImage? = nil
     var afterImage: UIImage? = nil
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
-        //backgroundImageView.image = image
-        takePhoto1Button.setImage(image, forState: UIControlState.Normal)
-        self.dismissViewControllerAnimated(true, completion: { () -> Void in
-        })
-        print("image selected from gallery")
-        
-        takePhoto1Button.setImage(image, forState: UIControlState.Normal)
-        //self.backgroundImageView.image = image
-    }
-    
     @IBOutlet weak var libraryButton1: UIButton!
     @IBOutlet weak var libraryButton2: UIButton!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -36,14 +25,23 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var takePhoto2Button: UIButton!
     var takePhotoButton = UIButton()
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        descriptionTextField.delegate = self
+        picker.delegate = self
+    }
+    
     @IBAction func takePhoto1Tapped(sender: UIButton) {
         takePhotoButton = takePhoto1Button
         takePhotoTapped()
     }
+    
     @IBAction func takePhoto2Tapped(sender: AnyObject) {
         takePhotoButton = takePhoto2Button
         takePhotoTapped()
     }
+    
     func takePhotoTapped(){
         if UIImagePickerController.availableCaptureModesForCameraDevice(.Rear) != nil {
             // ! Creating the image picker here doesn't work!
@@ -67,10 +65,12 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         takePhotoButton = takePhoto1Button
         libraryButtonPressed()
     }
+    
     @IBAction func libraryButton2Pressed(sender: AnyObject) {
         takePhotoButton = takePhoto2Button
         libraryButtonPressed()
     }
+    
     func libraryButtonPressed() {
         picker.allowsEditing = false
         picker.sourceType = .PhotoLibrary
@@ -99,6 +99,17 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        //backgroundImageView.image = image
+        takePhoto1Button.setImage(image, forState: UIControlState.Normal)
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+        })
+        print("image selected from gallery")
+        
+        takePhoto1Button.setImage(image, forState: UIControlState.Normal)
+        //self.backgroundImageView.image = image
+    }
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
@@ -118,6 +129,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         buttonCosmetics(takePhoto1Button)
@@ -148,13 +160,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
         }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        descriptionTextField.delegate = self
-        picker.delegate = self
     }
     
     override func didReceiveMemoryWarning() {

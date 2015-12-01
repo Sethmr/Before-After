@@ -24,6 +24,7 @@ class CurrentUser {
 class User {
     var username = String()
     var joinDate = NSDate()
+    var lastOnlineDate = NSDate()
     var userFirstName = String()
     var userLastName = String()
     var posts = [Post]()
@@ -35,6 +36,7 @@ class User {
         userFirstName = firstName
         userLastName = lastName
         profilePicture = picture
+        lastOnlineDate = NSDate()
     }
     
     init(name: String, firstName: String, lastName: String, cmts: [Comment], psts: [Post], picture: UIImage) {
@@ -44,6 +46,7 @@ class User {
         posts = psts
         comments = cmts
         profilePicture = picture
+        lastOnlineDate = NSDate()
     }
     
     init() {

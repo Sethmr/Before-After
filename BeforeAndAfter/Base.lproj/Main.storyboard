@@ -141,14 +141,21 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxr-YL-2OP">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                             <color key="textColor" red="0.086274509799999996" green="0.58823529409999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="319" y="14" width="73" height="21"/>
+                                            </variation>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n86-l2-vKV">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                             <animations/>
+                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
                                             <state key="normal" title="Name"/>
+                                            <variation key="widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="63" y="10" width="41" height="30"/>
+                                            </variation>
                                         </button>
                                     </subviews>
                                     <animations/>
@@ -542,9 +549,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jZK-0n-ws3">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="8" y="155" width="75" height="21"/>
+                                </variation>
                             </label>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZF8-Sn-EMO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -562,63 +572,80 @@
                                         <exclude reference="Lnw-T2-xNu"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="192" width="400" height="49"/>
                                     <mask key="constraints">
                                         <include reference="Lnw-T2-xNu"/>
                                     </mask>
                                 </variation>
                             </tabBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Active" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZj-3M-hwa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Active" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZj-3M-hwa">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="164" y="80" width="85" height="21"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ell-ci-Var">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="189" y="109" width="36" height="21"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXa-1f-JdV">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.40784313729999999" blue="1" alpha="0.20212204389999999" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="Pal-zZ-Enn"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
                                 <state key="normal" title="Edit Profile">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.094117647060000004" green="0.40784313729999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.094117647060000004" green="0.40784313729999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Pal-zZ-Enn"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="162" y="146" width="196" height="30"/>
                                     <mask key="constraints">
                                         <include reference="Pal-zZ-Enn"/>
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="editProfileButtonWasPressed:" destination="WjD-mb-vFV" eventType="touchUpInside" id="qEn-jG-o7j"/>
                                     <segue destination="Qa1-iL-3Mp" kind="push" id="GsB-w7-l68"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJt-pt-qrC">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="286" y="80" width="62" height="21"/>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGG-H0-iaV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGG-H0-iaV">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="286" y="109" width="62" height="21"/>
+                                </variation>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aQF-Gn-iDL">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -642,6 +669,9 @@
                                         <animations/>
                                     </collectionViewCell>
                                 </cells>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="241" width="400" height="310"/>
+                                </variation>
                             </collectionView>
                         </subviews>
                         <animations/>
@@ -786,6 +816,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="collectionView" destination="aQF-Gn-iDL" id="STs-WO-mJt"/>
+                        <outlet property="editProfileButton" destination="aXa-1f-JdV" id="INW-ip-D3W"/>
+                        <outlet property="friendCount" destination="TGG-H0-iaV" id="Ecc-3b-nDP"/>
+                        <outlet property="fullName" destination="jZK-0n-ws3" id="ld4-0U-ePc"/>
+                        <outlet property="lastActive" destination="ell-ci-Var" id="7dz-VI-aIZ"/>
+                        <outlet property="profileImage" destination="zPz-be-Slk" id="bkR-9f-NeL"/>
                         <segue destination="4Qo-0R-uKY" kind="presentation" identifier="toMapView" id="NgT-4u-fNW"/>
                     </connections>
                 </viewController>
@@ -1048,6 +1084,7 @@
                                         <variation key="widthClass=compact" constant="50"/>
                                     </constraint>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
                                 <state key="normal" title="SUBMIT">
                                     <color key="titleColor" red="0.094117647060000004" green="0.40784313729999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1177,14 +1214,13 @@
                                 <exclude reference="i5T-xy-kB7"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="1Oh-qf-4YG"/>
-                                <exclude reference="Gld-XJ-Mp4"/>
-                                <exclude reference="LRv-c0-4A0"/>
-                                <exclude reference="PZQ-wN-8uN"/>
-                                <exclude reference="lni-Tp-vgZ"/>
-                                <exclude reference="2ux-zN-wFK"/>
-                                <exclude reference="nKt-cM-ceV"/>
-                                <exclude reference="pfm-iY-NxI"/>
+                                <exclude reference="gzk-BW-cIS"/>
+                                <exclude reference="7oB-r5-dYY"/>
+                                <exclude reference="Aay-c4-iWB"/>
+                                <exclude reference="QpS-ia-pNw"/>
+                                <exclude reference="xhH-E2-Kpa"/>
+                                <exclude reference="XlY-de-aOe"/>
+                                <exclude reference="iqm-cL-Nbt"/>
                                 <exclude reference="HlG-6j-UV4"/>
                                 <exclude reference="IxA-9X-VFd"/>
                                 <exclude reference="L45-Mt-QuJ"/>
@@ -1192,22 +1228,23 @@
                                 <exclude reference="iFT-yA-ydg"/>
                                 <exclude reference="qqG-2h-1Uy"/>
                                 <exclude reference="tlM-sP-AdJ"/>
-                                <exclude reference="5Bc-c7-Z24"/>
-                                <exclude reference="KEI-eq-kWw"/>
+                                <exclude reference="1Oh-qf-4YG"/>
+                                <exclude reference="Gld-XJ-Mp4"/>
+                                <exclude reference="LRv-c0-4A0"/>
+                                <exclude reference="PZQ-wN-8uN"/>
+                                <exclude reference="lni-Tp-vgZ"/>
                                 <exclude reference="Bhv-sZ-234"/>
                                 <exclude reference="cTg-ah-4lI"/>
-                                <exclude reference="7oB-r5-dYY"/>
-                                <exclude reference="Aay-c4-iWB"/>
-                                <exclude reference="QpS-ia-pNw"/>
-                                <exclude reference="xhH-E2-Kpa"/>
                                 <exclude reference="bGy-Vl-8m4"/>
-                                <exclude reference="XlY-de-aOe"/>
-                                <exclude reference="iqm-cL-Nbt"/>
                                 <exclude reference="1u9-0u-6Ej"/>
                                 <exclude reference="Ue2-Pa-759"/>
                                 <exclude reference="i47-Rd-X9V"/>
                                 <exclude reference="yD1-ji-hRi"/>
-                                <exclude reference="gzk-BW-cIS"/>
+                                <exclude reference="pfm-iY-NxI"/>
+                                <exclude reference="2ux-zN-wFK"/>
+                                <exclude reference="nKt-cM-ceV"/>
+                                <exclude reference="5Bc-c7-Z24"/>
+                                <exclude reference="KEI-eq-kWw"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1224,14 +1261,13 @@
                                 <include reference="i5T-xy-kB7"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="1Oh-qf-4YG"/>
-                                <include reference="Gld-XJ-Mp4"/>
-                                <include reference="LRv-c0-4A0"/>
-                                <exclude reference="PZQ-wN-8uN"/>
-                                <include reference="lni-Tp-vgZ"/>
-                                <include reference="2ux-zN-wFK"/>
-                                <include reference="nKt-cM-ceV"/>
-                                <include reference="pfm-iY-NxI"/>
+                                <include reference="gzk-BW-cIS"/>
+                                <include reference="7oB-r5-dYY"/>
+                                <include reference="Aay-c4-iWB"/>
+                                <include reference="QpS-ia-pNw"/>
+                                <include reference="xhH-E2-Kpa"/>
+                                <include reference="XlY-de-aOe"/>
+                                <include reference="iqm-cL-Nbt"/>
                                 <include reference="HlG-6j-UV4"/>
                                 <include reference="IxA-9X-VFd"/>
                                 <include reference="L45-Mt-QuJ"/>
@@ -1239,22 +1275,23 @@
                                 <include reference="iFT-yA-ydg"/>
                                 <include reference="qqG-2h-1Uy"/>
                                 <exclude reference="tlM-sP-AdJ"/>
-                                <include reference="5Bc-c7-Z24"/>
-                                <include reference="KEI-eq-kWw"/>
+                                <exclude reference="1Oh-qf-4YG"/>
+                                <include reference="Gld-XJ-Mp4"/>
+                                <include reference="LRv-c0-4A0"/>
+                                <exclude reference="PZQ-wN-8uN"/>
+                                <include reference="lni-Tp-vgZ"/>
                                 <include reference="Bhv-sZ-234"/>
                                 <include reference="cTg-ah-4lI"/>
-                                <include reference="7oB-r5-dYY"/>
-                                <include reference="Aay-c4-iWB"/>
-                                <include reference="QpS-ia-pNw"/>
-                                <include reference="xhH-E2-Kpa"/>
                                 <include reference="bGy-Vl-8m4"/>
-                                <include reference="XlY-de-aOe"/>
-                                <include reference="iqm-cL-Nbt"/>
                                 <include reference="1u9-0u-6Ej"/>
                                 <include reference="Ue2-Pa-759"/>
                                 <include reference="i47-Rd-X9V"/>
                                 <exclude reference="yD1-ji-hRi"/>
-                                <include reference="gzk-BW-cIS"/>
+                                <include reference="pfm-iY-NxI"/>
+                                <include reference="2ux-zN-wFK"/>
+                                <include reference="nKt-cM-ceV"/>
+                                <include reference="5Bc-c7-Z24"/>
+                                <include reference="KEI-eq-kWw"/>
                             </mask>
                         </variation>
                     </view>
