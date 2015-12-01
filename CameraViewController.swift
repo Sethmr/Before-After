@@ -28,6 +28,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         //self.backgroundImageView.image = image
     }
     
+    @IBOutlet weak var libraryButton1: UIButton!
+    @IBOutlet weak var libraryButton2: UIButton!
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var takePhoto1Button: UIButton!
@@ -102,6 +104,16 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         return false
     }
     
+    @IBAction func x1Pressed(sender: AnyObject) {
+        beforeImage = nil
+        takePhoto1Button.setImage(UIImage(named: "camera"), forState: UIControlState.Normal)
+        
+    }
+    @IBAction func x2Pressed(sender: AnyObject) {
+        afterImage = nil
+        takePhoto2Button.setImage(UIImage(named: "camera"), forState: UIControlState.Normal)
+    }
+    
     // Image picker canceled
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
@@ -110,6 +122,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         super.viewDidAppear(animated)
         buttonCosmetics(takePhoto1Button)
         buttonCosmetics(takePhoto2Button)
+        buttonCosmetics(libraryButton1)
+        buttonCosmetics(libraryButton2)
         buttonCosmetics(submitButton)
         submitButton.layer.backgroundColor = UIColor(red: 24/255, green: 104/255, blue: 255/255, alpha: 0.2).CGColor
     }
@@ -123,13 +137,17 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
 
         if beforeImage != nil && afterImage != nil {
             DummyData.sharedInstance.posts += [Post(before: beforeImage!, after: afterImage!, likes: 0, descrip: descriptionTextField.text!, subDate: NSDate(), thisUser: CurrentUser.sharedInstance.user!)]
-        }
+            let alertController = UIAlertController(title: "Post Submitted", message:
+                "Your before and after pictures have been submitted to the feed.", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+        } else {
 
-        let alertController = UIAlertController(title: "Post Submitted", message:
-            "Your before and after pictures have been submitted to the feed.", preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
-        self.presentViewController(alertController, animated: true, completion: nil)
-        
+            let alertController = UIAlertController(title: "Not Submitted", message:
+                "You must select a before and after picture in order to submit them.", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
     }
     
     override func viewDidLoad() {
