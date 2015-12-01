@@ -15,7 +15,6 @@
 		5D1CCD511BFEABF50025F6C8 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CCD501BFEABF50025F6C8 /* NSDate+Extension.swift */; };
 		5D9E801E1BD97C2A00397E91 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E801D1BD97C2A00397E91 /* HomeTableViewController.swift */; };
 		5D9E80201BD97C4F00397E91 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E801F1BD97C4F00397E91 /* HomeTableViewCell.swift */; };
-		5D9E80221BD9DACA00397E91 /* TGCameraViewController in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E80211BD9DACA00397E91 /* TGCameraViewController */; };
 		5D9E80271BD9DC1E00397E91 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E80261BD9DC1E00397E91 /* CameraViewController.swift */; };
 		5D9E802B1BD9EC4900397E91 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E802A1BD9EC4900397E91 /* ProfileViewController.swift */; };
 		5D9E802D1BD9ECD300397E91 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E802C1BD9ECD300397E91 /* SettingsTableViewController.swift */; };
@@ -55,7 +54,6 @@
 		5D1CCD501BFEABF50025F6C8 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		5D9E801D1BD97C2A00397E91 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		5D9E801F1BD97C4F00397E91 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		5D9E80211BD9DACA00397E91 /* TGCameraViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TGCameraViewController; path = BeforeAndAfter/TGCameraViewController; sourceTree = "<group>"; };
 		5D9E80251BD9DB4A00397E91 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = BeforeAndAfter/BridgingHeader.h; sourceTree = "<group>"; };
 		5D9E80261BD9DC1E00397E91 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ../CameraViewController.swift; sourceTree = "<group>"; };
 		5D9E802A1BD9EC4900397E91 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 				5DF3772D1BBC7AA200CDA451 /* BeforeAndAfterUITests */,
 				5DF3770A1BBC7AA200CDA451 /* Products */,
 				5D9E80251BD9DB4A00397E91 /* BridgingHeader.h */,
-				5D9E80211BD9DACA00397E91 /* TGCameraViewController */,
 			);
 			sourceTree = "<group>";
 		};
@@ -318,7 +315,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF377191BBC7AA200CDA451 /* LaunchScreen.storyboard in Resources */,
-				5D9E80221BD9DACA00397E91 /* TGCameraViewController in Resources */,
 				5DF377161BBC7AA200CDA451 /* Assets.xcassets in Resources */,
 				5DF377141BBC7AA200CDA451 /* Main.storyboard in Resources */,
 			);

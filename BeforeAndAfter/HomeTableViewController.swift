@@ -10,8 +10,16 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        DummyData.sharedInstance.posts = DummyData.sharedInstance.posts.sort { $0.submissionDate.timeIntervalSinceDate($1.submissionDate) >= 0 }
+        tableView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        CurrentUser.sharedInstance.user = DummyData.sharedInstance.seth
+        
         DummyData.sharedInstance.posts = DummyData.sharedInstance.posts.sort { $0.submissionDate.timeIntervalSinceDate($1.submissionDate) >= 0 }
 
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -23,19 +31,11 @@ class HomeTableViewController: UITableViewController {
         self.tableView.addSubview(refreshControl!)
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        tableView.reloadData()
-    }
-    
     func refresh(sender: AnyObject){
         self.reloadInputViews()
         self.tableView.reloadData()
+        DummyData.sharedInstance.posts = DummyData.sharedInstance.posts.sort { $0.submissionDate.timeIntervalSinceDate($1.submissionDate) >= 0 }
         self.refreshControl!.endRefreshing()
-    }
-    
-    @IBAction func imageButtonWasPressed(sender: AnyObject) {
-        performSegueWithIdentifier("toImageDetails", sender: sender)
     }
 
     override func didReceiveMemoryWarning() {
