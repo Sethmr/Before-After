@@ -14,8 +14,8 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var likeNumberLabel: UILabel!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var slider: UISlider!
-    @IBOutlet weak var commentButton: UIButton!
     @IBOutlet weak var moreButton: UIButton!
+    @IBOutlet weak var likeView: UIView!
     
     var beforeImage = UIImage()
     var afterImage = UIImage()
@@ -24,16 +24,17 @@ class HomeTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        commentButton.layer.cornerRadius = 18
-        commentButton.backgroundColor = UIColor(red: 22/255, green: 150/255, blue: 232/255, alpha: 0.5)
-        commentButton.layer.borderWidth = 1
-        commentButton.layer.borderColor = UIColor(red: 22/255, green: 232/255, blue: 202/255, alpha: 1).CGColor
-        
+//        commentButton.layer.cornerRadius = 18
+//        commentButton.backgroundColor = UIColor(red: 22/255, green: 150/255, blue: 232/255, alpha: 0.5)
+//        commentButton.layer.borderWidth = 1
+//        commentButton.layer.borderColor = UIColor(red: 22/255, green: 232/255, blue: 202/255, alpha: 1).CGColor
+//        
         likeNumberLabel.text = "\(likeCount) Likes"
         likeNumberLabel.textColor = UIColor(red: 24/255, green: 104/255, blue: 255/255, alpha: 1)
-        likeNumberLabel.backgroundColor = UIColor(red: 22/255, green: 150/255, blue: 232/255, alpha: 0.5)
-        likeNumberLabel.layer.borderWidth = 1
-        likeNumberLabel.layer.borderColor = UIColor(red: 22/255, green: 232/255, blue: 202/255, alpha: 1).CGColor
+        likeView.backgroundColor = UIColor(red: 24/255, green: 104/255, blue: 255/255, alpha: 0.2)
+        likeView.layer.borderWidth = 1
+        likeView.layer.borderColor = UIColor(red: 22/255, green: 232/255, blue: 202/255, alpha: 1).CGColor
+        backgroundColor = UIColor(red: 22/255, green: 150/255, blue: 232/255, alpha: 0.1)
     }
 
     @IBAction func likeButtonPressed(sender: AnyObject) {

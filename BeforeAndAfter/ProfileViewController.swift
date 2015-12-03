@@ -32,6 +32,8 @@ class ProfileViewController: UIViewController {
         print("4")
         profileImage.image = CurrentUser.sharedInstance.user!.profilePicture
         buttonCosmetics(editProfileButton)
+        profileImage.layer.borderWidth = 2
+        profileImage.layer.borderColor = UIColor(red: 22/255, green: 232/255, blue: 202/255, alpha: 1).CGColor
         // Do any additional setup after loading the view.
     }
 
