@@ -20,6 +20,7 @@
 		5D9E802D1BD9ECD300397E91 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E802C1BD9ECD300397E91 /* SettingsTableViewController.swift */; };
 		5D9E802F1BD9ECE400397E91 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E802E1BD9ECE400397E91 /* EditProfileTableViewController.swift */; };
 		5D9E80311BD9EE2000397E91 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E80301BD9EE2000397E91 /* MapViewController.swift */; };
+		5DF202AE1C106E0500517F6D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF202AD1C106E0400517F6D /* CollectionViewCell.swift */; };
 		5DF3770D1BBC7AA200CDA451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF3770C1BBC7AA200CDA451 /* AppDelegate.swift */; };
 		5DF377141BBC7AA200CDA451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF377121BBC7AA200CDA451 /* Main.storyboard */; };
 		5DF377161BBC7AA200CDA451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF377151BBC7AA200CDA451 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		5D9E802C1BD9ECD300397E91 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		5D9E802E1BD9ECE400397E91 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
 		5D9E80301BD9EE2000397E91 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		5DF202AD1C106E0400517F6D /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		5DF377091BBC7AA200CDA451 /* BeforeAndAfter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeforeAndAfter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF3770C1BBC7AA200CDA451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DF377131BBC7AA200CDA451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				5D9E802C1BD9ECD300397E91 /* SettingsTableViewController.swift */,
 				5D9E802E1BD9ECE400397E91 /* EditProfileTableViewController.swift */,
 				5D9E802A1BD9EC4900397E91 /* ProfileViewController.swift */,
+				5DF202AD1C106E0400517F6D /* CollectionViewCell.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				5D9E802D1BD9ECD300397E91 /* SettingsTableViewController.swift in Sources */,
 				5D9E802F1BD9ECE400397E91 /* EditProfileTableViewController.swift in Sources */,
 				5D1CCD451BFE3F670025F6C8 /* Comment.swift in Sources */,
+				5DF202AE1C106E0500517F6D /* CollectionViewCell.swift in Sources */,
 				5D1CCD511BFEABF50025F6C8 /* NSDate+Extension.swift in Sources */,
 				5D1CCD431BFE3F530025F6C8 /* User.swift in Sources */,
 				5D9E802B1BD9EC4900397E91 /* ProfileViewController.swift in Sources */,

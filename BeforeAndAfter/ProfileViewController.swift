@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var fullName: UILabel!
@@ -21,20 +21,17 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("1")
         friendCount.text = String(DummyData.sharedInstance.friends.count)
-        print("2")
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MM/dd/yyyy"
         lastActive.text = dateFormatter.stringFromDate(CurrentUser.sharedInstance.user!.lastOnlineDate)
-        print("3")
         fullName.text = CurrentUser.sharedInstance.user!.userFirstName + " " + CurrentUser.sharedInstance.user!.userLastName
-        print("4")
         profileImage.image = CurrentUser.sharedInstance.user!.profilePicture
         buttonCosmetics(editProfileButton)
         profileImage.layer.borderWidth = 2
         profileImage.layer.borderColor = UIColor(red: 22/255, green: 232/255, blue: 202/255, alpha: 1).CGColor
-        // Do any additional setup after loading the view.
+
+        self.collectionView.reloadData()
     }
 
     func buttonCosmetics(button: UIButton) {
@@ -45,11 +42,34 @@ class ProfileViewController: UIViewController {
     @IBAction func editProfileButtonWasPressed(sender: AnyObject) {
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
     }
     
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of items
+        return DummyData.sharedInstance.seth.posts.count * 2
+    }
+    
+   func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("profileCell", forIndexPath: indexPath) as! CollectionViewCell
+
+        if indexPath.row % 2 == 0 {
+            cell.pofileCellImage.image = DummyData.sharedInstance.seth.posts[indexPath.row / 2].imageBefore
+        } else {
+            cell.pofileCellImage.image = DummyData.sharedInstance.seth.posts[(indexPath.row - 1) / 2].imageAfter
+        }
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
+    {
+        return CGSize(width: collectionView.frame.size.width/2 - 1, height: collectionView.frame.size.width/2 - 1)
+    }
+    
+
 
     /*
     // MARK: - Navigation
