@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barStyle = UIBarStyle.Black
         
         UINavigationBar.appearance().titleTextAttributes = [
-            NSFontAttributeName: UIFont(name: "MarkerFelt-Thin", size: 24)!, NSForegroundColorAttributeName: UIColor.whiteColor() ]
+            NSFontAttributeName: UIFont(name: "Menlo-Bold", size: 24)!, NSForegroundColorAttributeName: UIColor(red: 22/255, green: 232/255, blue: 202/255, alpha: 1.0) ]
         
         UITabBar.appearance().tintColor = UIColor(red: 24/255, green: 104/255, blue: 255/255, alpha: 1)
         return true
